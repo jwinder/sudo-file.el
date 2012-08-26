@@ -51,7 +51,7 @@
 
 (defun sudo-set-file-modes (file modes password)
   (shell-command-to-string (format "echo %s | sudo -k -S chmod %s %s; sudo -K" password modes file))
-  (sleep-for 0.5))
+  (sleep-for 0.3))
 
 (defun sudo-get-password ()
   (read-passwd "Sudo password: "))
