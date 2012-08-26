@@ -1,9 +1,12 @@
 ;;; sudo-file.el
 ;;
+;; Other 'sudo' packages didn't work well for me, so here's a simple one.
+;;
 ;; Simple functions for reading/writing protected files on a linux operating system.
 ;; Not saying this is isn't potentially dangerous.
 ;; It might mess up your file's permissions.
 ;; Use at your own risk.
+;; Don't worry, nothing malicious is done with your password here.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
