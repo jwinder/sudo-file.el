@@ -42,9 +42,9 @@
   (interactive)
     (let ((password (sudo-get-password))
           (modes (sudo-get-file-modes buffer-file-name)))
-    (sudo-set-file-modes buffer-file-name "o+w" password)
-    (save-buffer)
-    (sudo-set-file-modes buffer-file-name modes password)))
+      (sudo-set-file-modes buffer-file-name "o+w" password)
+      (save-buffer)
+      (sudo-set-file-modes buffer-file-name modes password)))
 
 (defun sudo-get-file-modes (file)
   (format "%o" (file-modes file)))
